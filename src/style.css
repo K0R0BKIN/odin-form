@@ -22,7 +22,7 @@ form {
   width: calc(128px * 3);
 }
 
-body {
+#app {
   font-family: system-ui, sans-serif;
   height: 100vh;
   display: flex;
