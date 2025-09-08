@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" crossorigin src="/odin-form/assets/index-BTmGduop.js"></script>
+    <link rel="stylesheet" crossorigin href="/odin-form/assets/index-DllVxfWm.css">
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <h1>Create account</h1>
+        <div id="fields">
+          <div class="field-group">
+            <div class="field">
+              <label for="firstName">First name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Thor"
+                pattern="[A-Za-z]{2,}"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="lastName">Last name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Odinson"
+                pattern="[A-Za-z]{2,}"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="thor@email.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="*********"
+              pattern=".{8,}"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+        </div>
+        <div id="buttons">
+          <button type="submit" id="sign-up">Sign up</button>
+        </div>
+      </form>
+      <p id="log-in">Already have an account? <a href="#">Log in.</a></p>
+    </div>
+  </body>
+</html>
